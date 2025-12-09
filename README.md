@@ -1,6 +1,7 @@
 # Resources
+https://codewithpawan.medium.com/backend-interview-questions-and-answers-part-1-comprehensive-guide-to-advanced-node-js-0fb80ac99427
 
-
+https://codewithpawan.medium.com/backend-interview-questions-and-answers-part-2-comprehensive-guide-to-advanced-node-js-19b6b98ff914
 
 # React + TypeScript + Vite
 
