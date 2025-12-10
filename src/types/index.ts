@@ -14,6 +14,6 @@ export interface User {
 export interface Tasks {
     title: string;
     description: string;
-    status: 
+    status: boolean,
     _id: string;
 }
