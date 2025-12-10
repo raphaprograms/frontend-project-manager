@@ -7,6 +7,7 @@ function Navbar() {
         <nav className ='text-white flex justify-between tiems-cent w-full h-10'>
             <NavLink to='/'>Home</NavLink>
             <NavLink to='/projects'>Projects</NavLink>
+            <NavLink to="/auth">Signin/Signup</NavLink>
         </nav>
     )
 }

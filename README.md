@@ -1,7 +1,15 @@
 # Resources
+Advanced NodeJS pt1
 https://codewithpawan.medium.com/backend-interview-questions-and-answers-part-1-comprehensive-guide-to-advanced-node-js-0fb80ac99427
 
+Advanced NodeJS pt2
 https://codewithpawan.medium.com/backend-interview-questions-and-answers-part-2-comprehensive-guide-to-advanced-node-js-19b6b98ff914
+
+Express Routes
+https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Server-side/Express_Nodejs/routes
+
+Merge Params
+https://javascript.plainenglish.io/understanding-mergeparams-true-in-express-js-f94939b45d72
 
 # React + TypeScript + Vite
 
