@@ -1,4 +1,7 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { useAuth } from "../hooks/useAuth";
+
 
 function AuthPage() {
   const [showRegister, setShowRegister] = useState(true);
@@ -8,29 +11,42 @@ function AuthPage() {
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
 
-  const handleLogin = async () => {
+  const { logIn, register: authRegister } = useAuth ();
+    const navigate = useNavigate();
+
+  const handleLogin = async (event: React.FormEvent) => {
+    event.preventDefault();
     try {
       setError("");
       setLoading(true);
       // api call here
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      await logIn(email, password);
+      navigate('/projects');
+
     } catch (error: any) {
       console.error(error.message);
-      setError(error.message);
+      setError(error.message || "Login failed");
     } finally {
       setLoading(false);
     }
   };
 
-  const handleRegister = async () => {
+  const handleRegister = async (event: React.FormEvent) => {
+    event.preventDefault()
     try {
       setError("");
       setLoading(true);
       // api call here
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      await authRegister(username, email, password);
+
+      setShowRegister(false);
+      setError('Registration successful! Login when ready.')
+
     } catch (error: any) {
       console.error(error.message);
-      setError(error.message);
+      setError(error.message || 'Registration failed');
     } finally {
       setLoading(false);
     }
@@ -126,7 +142,7 @@ function AuthPage() {
           </label>
           <input
             type="submit"
-            value="Register"
+            value="Login"
             className="border py-2 px-4 rounded"
           />
 
