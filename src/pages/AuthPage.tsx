@@ -58,10 +58,10 @@ function AuthPage() {
         Start managing your projects.
       </h1>
 
-      {/* ERROR  */}
+    
       {error && <div>{error}</div>}
 
-      {/* FORM  */}
+      
       {showRegister ? (
         <form
           onSubmit={handleRegister}
@@ -109,7 +109,7 @@ function AuthPage() {
             className="border py-2 px-4 rounded"
           />
 
-          {/* LOADING  */}
+          
           {loading && <div className="animate-pulse">...</div>}
         </form>
       ) : (
@@ -146,12 +146,12 @@ function AuthPage() {
             className="border py-2 px-4 rounded"
           />
 
-          {/* LOADING  */}
+        
           {loading && <div className="animate-pulse">...</div>}
         </form>
       )}
 
-      {/* TOGGLE FORM  */}
+      
       {showRegister ? (
         <div>
           Already have an account?{" "}

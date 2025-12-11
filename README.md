@@ -11,6 +11,45 @@ https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Server
 Merge Params
 https://javascript.plainenglish.io/understanding-mergeparams-true-in-express-js-f94939b45d72
 
+# Pro-Tasker Frontend
+
+A React-based project management application with user authentication and task tracking.
+
+## Features
+
+- User registration and login
+- Create, view, update, and delete projects
+- Create, view, update, and delete tasks within projects
+- Kanban-style task board (To Do, In Progress, Done)
+- Protected routes for authenticated users
+- Responsive design
+
+## Tech Stack
+
+- React 18
+- TypeScript
+- React Router v6
+- Axios for API calls
+- Tailwind CSS for styling
+- Vite for build tooling
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v18+)
+- Backend API running (see backend README)
+
+### Installation
+
+1. Clone the repository
+git clone <repository-url>
+cd frontend
+```
+
+2. Install dependencies
+npm install
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
