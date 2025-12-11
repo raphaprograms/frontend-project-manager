@@ -21,7 +21,7 @@ interface AuthProviderProps {
 }
 
 export default function AuthProvider({ children }: AuthProviderProps) {
-  // Check if there is a token in localStorage and set them in state
+ 
   const [user, setUser] = useState<User | null>(() => {
     try {
       const value = localStorage.getItem("user");

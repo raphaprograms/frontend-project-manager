@@ -11,9 +11,9 @@ export interface User {
   githubId?: string;
 }
 
-export interface Tasks {
+export interface Task {
     title: string;
     description: string;
-    status: boolean,
+    status: 'todo' | 'in-progress' | 'done';
     _id: string;
 }
