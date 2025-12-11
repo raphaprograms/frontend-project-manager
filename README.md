@@ -127,11 +127,11 @@ The app will be running at http://localhost:5173
 
 ### Project Structure 
 src/
-├── clients/          # API client configuration. 
-├── components/       # Reusable UI components. 
-├── context/          # React Context providers. 
-├── hooks/            # Custom React hooks. 
-├── pages/            # Page components. 
-├── types/            # TypeScript interfaces. 
-├── App.tsx           # Main app with routing. 
-└── main.tsx          # Entry point. 
+├── clients/          # API client configuration <br>
+├── components/       # Reusable UI components <br>
+├── context/          # React Context providers <br>
+├── hooks/            # Custom React hooks <br>
+├── pages/            # Page components <br>
+├── types/            # TypeScript interface <br>
+├── App.tsx           # Main app with routing <br> 
+└── main.tsx          # Entry point <br>
