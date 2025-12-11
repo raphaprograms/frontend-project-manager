@@ -50,6 +50,39 @@ cd frontend
 2. Install dependencies
 npm install
 
+API Endpoints
+Authentication
+Method	Endpoint	Description
+POST	/api/users/register	Register a new user
+POST	/api/users/login	Login and receive JWT
+GET	/api/users/logout	Logout user
+
+Projects (Protected - Requires JWT)
+Method	Endpoint	Description
+GET	/api/projects	Get all projects for logged-in user
+GET	/api/projects/:projectId	Get a single project
+POST	/api/projects	Create a new project
+PUT	/api/projects/:projectId	Update a project
+DELETE	/api/projects/:projectId	Delete a project
+Tasks (Protected - Requires JWT)
+
+Method	Endpoint	Description
+GET	/api/projects/:projectId/tasks	Get all tasks for a project
+GET	/api/projects/:projectId/tasks/:taskId	Get a single task
+POST	/api/projects/:projectId/tasks	Create a new task
+PUT	/api/projects/:projectId/tasks/:taskId	Update a task
+DELETE	/api/projects/:projectId/tasks/:taskId	Delete a task
+
+
+Deployment
+Deployed on Render
+Live URL: https://master-task-backend.onrender.com/
+
+
+## DeploymentDeployed on [Netlify](https://netlify.com)Live URL: `https://rn-frontend-rtt-54.netlify.app/`
+
+
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
