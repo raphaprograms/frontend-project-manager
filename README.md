@@ -126,7 +126,7 @@ npm run dev
 The app will be running at http://localhost:5173
 
 ### Project Structure 
-src/
+src/ <br>
 ├── clients/          # API client configuration <br>
 ├── components/       # Reusable UI components <br>
 ├── context/          # React Context providers <br>
