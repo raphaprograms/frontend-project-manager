@@ -107,7 +107,7 @@ Live URL: https://master-task-backend.onrender.com/
 
 Deployed on [Netlify](https://netlify.com)
 
-Live URL: `https://rn-frontend-rtt-54.netlify.app/`
+Live URL: https://rn-frontend-rtt-54.netlify.app
 
 ### Netlify Configuration
 
